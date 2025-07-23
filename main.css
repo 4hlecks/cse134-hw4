@@ -1,0 +1,42 @@
+/* Global Styles */
+:root {
+    /* Font Settings */
+    --font-family: 'Onest', Helvetica, Arial, sans-serif;
+    --font-display: fallback;
+    --text-color: rgb(51, 42, 37);
+    --font-weight-thin: 300;
+    --font-size: 20px;
+    --font-weight: 500;
+    --font-size-navigation: 20px;
+    --font-weight-navigation: 600;
+    --font-size-large: 96px;
+    --font-weight-large: 700;
+    --font-size-fallback: 24px;
+    --font-weight-fallback: 600;
+
+    /* Transition Effects */
+    --transition: font-size 0.5s ease-in-out,
+            background-color 0.5s ease-in-out,
+            color 0.25s ease-in-out,
+            font-color 0.15s ease-in-out,
+            transform 0.5s ease-in-out,
+            width 1s ease-in-out;
+
+    /* Color Settings */
+    --primary-color: rgb(253,249,238);
+    --secondary-color: rgb(240, 236, 224);
+    --tertiary-color: rgb(235, 227, 214);
+    --hover-color: rgb(102,136,204);
+    --contrast-color: rgb(51, 42, 37);
+
+    /* Border Radius */
+    --container-border-radius: 24px;
+    --button-border-radius: 24px;
+}
+
+* {
+    font-family: var(--font-family);
+    font-display: var(--font-display);
+    color: var(--text-color);
+    transition: var(--transition);
+}
