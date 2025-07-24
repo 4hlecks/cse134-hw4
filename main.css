@@ -3,7 +3,8 @@
     /* Font Settings */
     --font-family: 'Onest', Helvetica, Arial, sans-serif;
     --font-display: fallback;
-    --text-color: rgb(51, 42, 37);
+    --text-color: #332a25;
+    --text-color-contrast: #fdf9ee;
     --font-weight-thin: 300;
     --font-size: 20px;
     --font-weight: 500;
@@ -23,11 +24,11 @@
             width 1s ease-in-out;
 
     /* Color Settings */
-    --primary-color: rgb(253,249,238);
-    --secondary-color: rgb(240, 236, 224);
-    --tertiary-color: rgb(235, 227, 214);
-    --hover-color: rgb(102,136,204);
-    --contrast-color: rgb(51, 42, 37);
+    --primary-color: #fdf9ee;
+    --secondary-color: #f0ece0;
+    --tertiary-color: #ebe3d6;
+    --hover-color: #6688cc;
+    --contrast-color: #332a25;
 
     /* Border Radius */
     --container-border-radius: 24px;
