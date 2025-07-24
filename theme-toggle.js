@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const root = document.documentElement;
     const themeToggle = document.getElementById("theme-toggle");
+    const html = document.querySelector("html");
+
+    // Disable transitions during initial load
+    html.classList.add("no-transition");
 
     if (themeToggle) {
         themeToggle.style.display = "block";
@@ -33,6 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const savedTheme = localStorage.getItem("theme") || "light";
     setTheme(savedTheme);
+
+    // Re-enable transitions shortly after load
+    setTimeout(() => {
+        html.classList.remove("no-transition");
+    }, 250); // Delay just enough for theme to be applied
 
     themeToggle.addEventListener("click", () => {
         const currentTheme = localStorage.getItem("theme" || "light");
