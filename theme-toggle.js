@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
         themeToggle.style.display = "block";
     }
     themeToggle.classList.add("light"); // Initial theme class
-
     function setTheme(theme) {
         if (theme === "light") {
             themeToggle.classList.remove("light");
